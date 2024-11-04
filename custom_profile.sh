@@ -11,3 +11,7 @@ export EDITOR=/usr/bin/hx
 export HELIX_RUNTIME=/var/lib/helix/runtime
 export QT_STYLE_OVERRIDE=kvantum
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
