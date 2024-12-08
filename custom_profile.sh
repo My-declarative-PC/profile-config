@@ -1,7 +1,15 @@
 #!/bin/bash
 
-export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:/var/lib/flatpak/exports/bin
+export PATH="$PATH:/var/lib/flatpak/exports/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/share/flatpak/exports/share"
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
 export FLAVOR="mocha"
 export ACCENT="mauve"
