@@ -3,6 +3,7 @@
 export PATH="$PATH:/var/lib/flatpak/exports/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/share/flatpak/exports/share"
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
@@ -19,7 +20,3 @@ export EDITOR=/usr/bin/hx
 export HELIX_RUNTIME=/var/lib/helix/runtime
 export QT_STYLE_OVERRIDE=kvantum
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
