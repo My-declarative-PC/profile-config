@@ -19,3 +19,4 @@ export GTK_THEME=catppuccin-$ACCENT-$FLAVOR-standard+default
 export EDITOR=hx
 export QT_STYLE_OVERRIDE=kvantum
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+export XAUTHORITY=$HOME/.Xauthority
