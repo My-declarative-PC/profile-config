@@ -3,7 +3,13 @@
 export PATH="$PATH:/var/lib/flatpak/exports/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/share/flatpak/exports/share"
-export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
+
+# homebrew
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+# homebrew end
+
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
@@ -12,9 +18,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export FLAVOR="mocha"
-export ACCENT="mauve"
-export GTK_THEME=catppuccin-$ACCENT-$FLAVOR-standard+default
+export GTK_THEME=dracula
+# export FLAVOR="mocha"
+# export ACCENT="mauve"
+# export GTK_THEME=catppuccin-$ACCENT-$FLAVOR-standard+default
 
 export EDITOR=hx
 export QT_STYLE_OVERRIDE=kvantum
