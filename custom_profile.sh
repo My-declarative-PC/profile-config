@@ -18,10 +18,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export GTK_THEME=dracula
-# export FLAVOR="mocha"
-# export ACCENT="mauve"
-# export GTK_THEME=catppuccin-$ACCENT-$FLAVOR-standard+default
+# export GTK_THEME=dracula
+export FLAVOR="mocha"
+export ACCENT="mauve"
+export GTK_THEME=catppuccin-$ACCENT-$FLAVOR-standard+default
 
 export EDITOR=hx
 export QT_STYLE_OVERRIDE=kvantum
