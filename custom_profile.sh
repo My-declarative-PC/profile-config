@@ -21,7 +21,9 @@ esac
 # export GTK_THEME=dracula
 export FLAVOR="mocha"
 export ACCENT="mauve"
-export GTK_THEME=catppuccin-$ACCENT-$FLAVOR-standard+default
+export GTK_THEME=catppuccin-$FLAVOR-$ACCENT-standard+default
+export ADW_DISABLE_PORTAL=1
+export GTK2_RC_FILES=/usr/share/themes/$GTK_THEME
 
 export EDITOR=hx
 export QT_STYLE_OVERRIDE=kvantum
