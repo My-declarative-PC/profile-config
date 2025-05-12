@@ -1,0 +1,1 @@
+../catppuccin-theme/themes/catppuccin-fzf-mocha.sh
