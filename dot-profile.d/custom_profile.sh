@@ -18,7 +18,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# export GTK_THEME=dracula
+# GTK settings
+export GTK_USE_PORTAL=1
 export FLAVOR="mocha"
 export ACCENT="mauve"
 export GTK_THEME=catppuccin-$FLAVOR-$ACCENT-standard+default

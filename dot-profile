@@ -1,5 +1,4 @@
 test -z "$PROFILEREAD" && . /etc/profile || true
 
-export GTK_USE_PORTAL=1
 source ~/.profile.d/custom_init.sh
 source ~/.profile.d/custom_profile.sh
