@@ -9,6 +9,22 @@ fi
 # Aliases
 #
 
+function lsusb {
+    if command -v cyme &>/dev/null; then
+        cyme "$@"
+    else
+        lsusb "$@"
+    fi
+}
+
+function cat {
+    if command -v bat &>/dev/null; then
+        bat "$@"
+    else
+        cat "$@"
+    fi
+}
+
 ### ls
 function ls {
     if command -v eza &>/dev/null; then
@@ -44,6 +60,10 @@ fi
 
 if command -v zoxide &>/dev/null; then
     eval "$(zoxide init --cmd cd bash)"
+fi
+
+if command -v fzf &>/dev/null; then
+    eval "$(fzf --bash)"
 fi
 
 if command -v direnv &>/dev/null; then
