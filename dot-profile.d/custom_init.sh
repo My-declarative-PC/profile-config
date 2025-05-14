@@ -25,6 +25,14 @@ function cat {
     fi
 }
 
+function rg {
+    if command -v batgrep &>/dev/null; then
+        batgrep "$@"
+    else
+        rg "$@"
+    fi
+}
+
 ### ls
 function ls {
     if command -v eza &>/dev/null; then
